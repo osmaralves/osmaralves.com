@@ -20,6 +20,7 @@
     <!-- Stylesheet's' -->
     <link rel="stylesheet" href="public/stylesheets/reset.css">
     <link rel="stylesheet" href="public/stylesheets/main.css">
+    <link rel="stylesheet" href="public/vendor/tipsy/stylesheets/tipsy.css">
     <!-- /Stylesheet's' --> 
  
     <!--[if lt IE 9]>
@@ -33,7 +34,7 @@
       <p>Sou desenvolvedor back-end (PHP, Ruby)<br />e front-end (HTML,CSS e Javascript),<br />entusiasta da simplicidade e perfeccionismo.</p>
       <nav>
         <ul>
-          <li><a href="#" title="Portfolio">Portfolio</a></li>
+          <li><a href="#" title="Portfolio" id="portfolioLink">Portfolio</a></li>
           <li><a href="http://linkedin.com/in/osmaralves" title="Currírulo no Linkedin">Linkedin</a></li>
           <li><a href="mailto:osmar.wd@gmail.com" title="Gmail">Gmail</a></li>
           <li><a href="http://twitter.com/osmarAlvesWeb" title="Twitter">Twitter</a></li>
@@ -74,5 +75,20 @@
         </ul>
       </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="public/vendor/tipsy/javascripts/jquery.tipsy.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#portfolioLink").click(function(e){
+          e.preventDefault();
+          $("#portfolio:not(:animated)").fadeToggle('fast', function(){
+            $("#portfolioLink").toggleClass('actived');
+          });
+        });
+
+        $("#portfolio > ul > li > a").tipsy({fade: true, opacity: 1, gravity: 'nw'});
+      });
+    </script>
   </body>
 </html>
