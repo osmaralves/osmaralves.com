@@ -1,0 +1,74 @@
+body {
+  background:url("../images/background.jpg") top left;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+body > section {
+  height:200px;
+  margin:-100px 0 0 80px;
+  position:absolute; top:50%;
+}
+
+h1 {
+  margin:0 0 15px 0;
+  font-size:50px;
+  letter-spacing:-5px; color:#fff;
+}
+
+h1 > strong {
+  color:#fff200;
+}
+
+p {
+  margin:0 0 15px 0;
+  font-size:25px; font-weight:bold;
+  letter-spacing:-1px; line-height:27px; color:#6ca1d5;
+}
+
+nav {
+  padding:12px 0 0 0;
+  background:url("../images/divisor.jpg") top left no-repeat;
+}
+
+nav > ul {
+  padding:0 0 13px 0;
+  background:url("../images/divisor.jpg") bottom left no-repeat;
+}
+
+nav > ul > li {
+  display:inline;
+}
+
+nav > ul > li > a {
+  margin:0 10px 0 0;
+  font-weight:bold;
+  text-transform:lowercase; text-decoration:none;
+  color:#6ca1d5;
+}
+
+nav > ul > li > a:hover {
+  color:#fff;
+}
+
+#portfolio {
+  margin:-12px 0 0 0;
+  padding:9px 0 0 0;
+  background:url("../images/seta.png") top 28px no-repeat;
+  display:none;
+}
+
+#portfolio > ul {
+  padding:10px;
+  background:url("../images/bg-black-50.png") top left;
+  list-style:none; display:inline-block;
+  -webkit-border-radius:6px;
+}
+
+#portfolio > ul > li {
+  margin:0 8px 0  0;
+  display:inline-block;
+}
+
+#portfolio > ul > li:last-child {
+  margin-right:0;
+}
