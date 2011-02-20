@@ -9,6 +9,8 @@ body > section {
   position:absolute; top:50%;
 }
 
+a { outline:none; }
+
 h1 {
   margin:0 0 15px 0;
   font-size:50px;
@@ -56,23 +58,31 @@ nav > ul > li > a.actived {
 
 #portfolio {
   margin:-12px 0 0 0;
-  padding:9px 0 0 0;
-  background:url("../images/seta.png") top 28px no-repeat;
   display:none;
 }
 
+#portfolio span.pointer {
+  width:11px; height:9px;
+  margin:0 0 0 28px;
+  background: url("../images/pointer.png") top left no-repeat;
+  display:block;
+}
+
 #portfolio > ul {
-  padding:10px;
+  padding:10px 5px 10px 5px;
   background:url("../images/bg-black-50.png") top left;
   list-style:none; display:inline-block;
   -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
 }
 
 #portfolio > ul > li {
-  margin:0 8px 0  0;
-  display:inline-block;
+  float:left;
 }
 
-#portfolio > ul > li:last-child {
-  margin-right:0;
+#portfolio > ul > li > a {
+  width:50px; height:50px;
+  margin:0 5px 0 5px;
+  display:block;
 }
